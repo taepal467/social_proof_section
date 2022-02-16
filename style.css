@@ -1,0 +1,165 @@
+body {
+    background-image: url(images/bg-pattern-top-desktop.svg) ,url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+}
+
+.container-fluid {
+    padding:50px;
+}
+
+h1, p {
+    width:80%;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 55px;
+    font-weight: 700;
+}
+
+h6 {
+    padding-top: 10px;
+}
+
+p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 400px;
+}
+
+span {
+    color: hsl(333, 80%, 67%);
+}
+
+section {
+    display: flex;
+    padding: 10 40px;
+}
+
+img {
+    border-radius: 50px;
+}
+
+/* star rating */
+.star-rating {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500px;
+}
+
+.stars {
+    padding: 0px 20px;
+}
+
+.guru {
+    justify-self: flex-end;
+    margin-left: 50px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500px;
+    width: 625px;
+    height: 40px;
+}
+
+.besttech {
+    margin-left: 100px;
+    width: 600px;
+    height: 40px;
+}
+
+/*testimonials */
+#testimonials {
+    display: flex;
+    padding: 0 10rem;
+    margin: 100px;
+    justify-content: space-between;
+}
+
+.review-box {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    font-family: 'Spartan', sans-serif;
+}
+
+.review-box.irene {
+    margin: 20px 10px -20px 10px;
+}
+
+.review-box.anne {
+    margin: 40px 10px -40px 10px;
+}
+
+/* footer */
+footer {
+   color: black;
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+}
+
+.attribution {
+    font-size: 1em;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+    color: blueviolet;
+}
+
+/* media */
+@media screen and (max-width: 992px) {
+    body {
+    background-image: url(images/bg-pattern-top-mobile.svg) ,url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    }
+
+    section {
+        display: flex;
+        padding: 10 40px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        color: black;
+        display: flex;
+        align-self: center;
+     }
+
+     .star-rating {
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+        color: hsl(300, 43%, 22%);
+        font-weight: 500px;
+        width: 200px;
+    }
+    
+    .reviews, .guru, .besttech {
+        display: flex;
+        flex-wrap: wrap;
+        height: 40.5px;
+        width: 418.5px;
+    }
+    
+  }
+
+
